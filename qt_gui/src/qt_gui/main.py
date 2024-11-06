@@ -270,14 +270,6 @@ class Main(object):
 
         # check option dependencies
         try:
-            if self._options.plugin_args and \
-                    not self._options.standalone_plugin and \
-                    not self._options.command_start_plugin and \
-                    not self._options.embed_plugin:
-                raise RuntimeError(
-                    'Option --args can only be used together with either --standalone, '
-                    '--command-start-plugin or --embed-plugin option')
-
             if self._options.freeze_layout and not self._options.lock_perspective:
                 raise RuntimeError(
                     'Option --freeze_layout can only be used together with the '
