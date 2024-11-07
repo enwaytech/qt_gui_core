@@ -125,8 +125,8 @@ class Main(object):
         common_group.add_argument(
             '--args', dest='plugin_args', nargs='*', type=str,
             help='arbitrary arguments which are passes to the plugin '
-                    '(only with -s, --command-start-plugin or --embed-plugin). '
-                    'It must be the last option since it collects all following options.')
+                 '(only with -s, --command-start-plugin or --embed-plugin). '
+                 'It must be the last option since it collects all following options.')
 
         if not standalone:
             group = parser.add_argument_group(
